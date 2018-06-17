@@ -4,7 +4,7 @@
   gather_facts: yes
   user: 
     name:{{ lookup('env','USERNAME') }} 
-    createhome:yes 
+    create_home:yes 
     home:/home/{{ lookup('env','USERNAME') }} 
     generate_ssh_key:yes 
     shell:/bin/bash 
