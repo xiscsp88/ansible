@@ -1,5 +1,6 @@
 ---
-- user: 
+- hosts: all
+  user: 
    name: test1
    create_home: yes
    home: /home/test1
