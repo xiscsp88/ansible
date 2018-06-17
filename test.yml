@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts: yes
 
-   - name: Users | Create new user
+   - name : Users 
       user: 
         name:{{ lookup('env','USERNAME') }} 
         createhome:yes 
