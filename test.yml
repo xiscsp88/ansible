@@ -2,12 +2,11 @@
 - hosts: all
   gather_facts: yes
 
-    ##
-    # Create the password then create the user
-    #
-    - name: Users | Generate password for new user
-      shell: makepasswd --chars=20
-      register: user_password 
-
-    - name: Users | Create new user
-      user: name=new-user createhome=yes home=/home/new-user generate_ssh_key=yes shell=/bin/bash password=${user_password.stdout}
+   - name: Users | Create new user
+      user: 
+        name:{{ lookup('env','USERNAME') }} 
+        createhome:yes 
+        home:/home/{{ lookup('env','USERNAME') }} 
+        generate_ssh_key:yes 
+        shell:/bin/bash 
+        password:{{ lookup('env','PASS') }}
