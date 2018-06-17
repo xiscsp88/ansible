@@ -1,8 +1,7 @@
 ---
-- remote_user: root
-  hosts: all
+- hosts: all
   gather_facts: yes
-  user: 
+- user: 
     name: test1
     create_home: yes
     home: /home/test1
