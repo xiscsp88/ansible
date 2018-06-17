@@ -4,9 +4,9 @@
 
 - name : Users 
     user: 
-    name:{{ lookup('env','USERNAME') }} 
-    createhome:yes 
-    home:/home/{{ lookup('env','USERNAME') }} 
-    generate_ssh_key:yes 
-    shell:/bin/bash 
-    password:{{ lookup('env','PASS') }}
+      name:{{ lookup('env','USERNAME') }} 
+      createhome:yes 
+      home:/home/{{ lookup('env','USERNAME') }} 
+      generate_ssh_key:yes 
+      shell:/bin/bash 
+      password:{{ lookup('env','PASS') }}
