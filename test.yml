@@ -3,9 +3,9 @@
   hosts: all
   gather_facts: yes
   user: 
-    name:{{ lookup('env','USERNAME') }}
+    name: test1
     create_home:yes
-    home:/home/{{ lookup('env','USERNAME') }}
+    home:/home/test1
     generate_ssh_key:yes
     shell:/bin/bash
-    password:{{ lookup('env','PASS') }}
+    password:test1
