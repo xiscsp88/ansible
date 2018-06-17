@@ -1,6 +1,5 @@
 ---
-- name: ansible
-  hosts: all
+- hosts: all
   gather_facts: yes
   user: 
     name: test1
