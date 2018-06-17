@@ -1,9 +1,10 @@
 ---
 - hosts: all
-  user: 
-   name: test1
-   create_home: yes
-   home: /home/test1
-   generate_ssh_key: yes
-   shell: /bin/bash
-   password: test1
+- name: test
+   user: 
+    name: test1
+    create_home: yes
+    home: /home/test1
+    generate_ssh_key: yes
+    shell: /bin/bash
+    password: test1
