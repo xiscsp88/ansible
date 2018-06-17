@@ -2,12 +2,12 @@
 - hosts: all
   gather_facts: yes
 
- tasks:
- - name : Users 
-   user: 
-    name:{{ lookup('env','USERNAME') }} 
-    createhome:yes 
-    home:/home/{{ lookup('env','USERNAME') }} 
-    generate_ssh_key:yes 
-    shell:/bin/bash 
-    password:{{ lookup('env','PASS') }}
+  tasks:
+  - name : Users 
+    user: 
+      name:{{ lookup('env','USERNAME') }} 
+      createhome:yes 
+      home:/home/{{ lookup('env','USERNAME') }} 
+      generate_ssh_key:yes 
+      shell:/bin/bash 
+      password:{{ lookup('env','PASS') }}
