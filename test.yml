@@ -5,9 +5,9 @@
   tasks:
   - name: test
     user: 
-      name: test2
+      name: test3
       create_home: yes
-      home: /home/test2
+      home: /home/test3
       generate_ssh_key: yes
       shell: /bin/bash
-      password: test2
+      password: test3
